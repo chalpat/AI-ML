@@ -1,0 +1,1 @@
+Local RAG AI customized for reading a products csv and respond to specific queries related to price, etc.
