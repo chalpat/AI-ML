@@ -45,7 +45,7 @@ Answer:
 # OpenAI LLM (Latest)
 # -----------------------------
 llm = OpenAI(
-    model="gpt-4.1-mini",   # alternatives: gpt-4o, gpt-4.1
+    model="gpt-4.1",   # alternatives: gpt-4o, gpt-4.1, gpt-4.1-mini
     temperature=0.0,
     max_tokens=256
 )
@@ -76,5 +76,6 @@ index = VectorStoreIndex.from_documents(documents)
 # -----------------------------
 query_engine = index.as_query_engine()
 response = query_engine.query("How many CoEs are there in the document?")
+#response = query_engine.query("How is India doing today?")
 
 print(response)
