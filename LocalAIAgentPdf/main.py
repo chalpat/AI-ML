@@ -19,29 +19,6 @@ documents = SimpleDirectoryReader(
 ).load_data()
 
 # -----------------------------
-# Prompt Template
-# -----------------------------
-qa_template = PromptTemplate(
-    """
-You are a careful assistant.
-
-Answer the question using ONLY the information in the context below.
-If the answer is not clearly in the context, say:
-"I don't know based on the provided document."
-
-Do not use any outside knowledge. Do not guess.
-
-Context:
-{context_str}
-
-Question:
-{query_str}
-
-Answer:
-"""
-)
-
-# -----------------------------
 # OpenAI LLM (Latest)
 # -----------------------------
 llm = OpenAI(
@@ -64,7 +41,6 @@ Settings.llm = llm
 Settings.embed_model = embed_model
 Settings.chunk_size = 1024
 Settings.chunk_overlap = 50
-Settings.prompt_template = qa_template
 
 # -----------------------------
 # Build Index
