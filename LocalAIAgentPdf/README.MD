@@ -1,8 +1,1 @@
-pip install \
-  llama-index-core \
-  llama-index-llms-huggingface \
-  llama-index-embeddings-huggingface \
-  torch \
-  transformers \
-  sentence-transformers \
-  huggingface_hub
+This project reads the input pdf, converts to chunks, embedds and stores into vector db. This RAG provides only the specific results from loaded pdf.
