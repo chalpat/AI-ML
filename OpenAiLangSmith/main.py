@@ -12,5 +12,4 @@ from langchain_openai import ChatOpenAI
 llm=ChatOpenAI(model="gpt-4o")
 
 ## Input and get response form LLM
-
 result=llm.invoke("What is Generative AI?")
