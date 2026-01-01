@@ -75,7 +75,7 @@ index = VectorStoreIndex.from_documents(documents)
 # Query Engine
 # -----------------------------
 query_engine = index.as_query_engine()
-response = query_engine.query("How many CoEs are there in the document?")
-#response = query_engine.query("How is India doing today?")
+response = query_engine.query("How many CoEs are there in the document?") # Positive Scenario
+#response = query_engine.query("How is India doing today?") # Negative scenario
 
 print(response)

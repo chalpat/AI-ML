@@ -10,9 +10,7 @@ os.environ["LANGCHAIN_PROJECT"]=os.getenv("LANGCHAIN_PROJECT")
 
 from langchain_openai import ChatOpenAI
 llm=ChatOpenAI(model="gpt-4o")
-print(llm)
 
 ## Input and get response form LLM
 
 result=llm.invoke("What is Generative AI?")
-print(result)

@@ -1,0 +1,22 @@
+[project]
+name = "localaichatbotpdf"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.2.0",
+    "langchain-community>=0.1.14",
+    "langchain-core>=0.1.20",
+    "langchain-openai>=0.1.20",
+    "langsmith>=0.0.28",
+    "llama-index>=0.10.37",
+    "llama-index-embeddings-huggingface>=0.1.10",
+    "llama-index-llms-openai>=0.1.20",
+    "openai>=1.30.0",
+    "python-dotenv>=1.0.1",
+    "sentence-transformers>=2.6.1",
+    "streamlit>=1.30.0",
+    "torch>=2.0.0",
+    "transformers>=4.40.0",
+]
