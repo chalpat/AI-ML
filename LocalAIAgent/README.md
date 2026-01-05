@@ -31,14 +31,7 @@ Embedding model (HuggingFace / OpenAI / Local)
 Vector store (FAISS / Chroma / equivalent)
 
 📂 Project Structure
-├── data/
-│   └── products.csv
-├── src/
-│   ├── ingest.py
-│   ├── rag_pipeline.py
-│   └── query.py
-├── requirements.txt
-└── README.md
+
 
 ### 📥 Installation
 
