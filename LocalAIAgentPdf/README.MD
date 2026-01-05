@@ -1,6 +1,6 @@
 # PDF-based RAG System
 
-## Overview
+## 📌 Overview
 
 This project implements a **PDF-based Retrieval-Augmented Generation (RAG)** system.  
 It reads input PDF files, converts the content into chunks, generates embeddings, and stores them in a **vector database**.  
@@ -8,9 +8,7 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ---
 
-## Architecture Diagram
-
-![RAG Architecture](assets/rag_architecture.png)
+## 🚀 Architecture Diagram
 
 **Flow Explanation:**
 1. PDF files are ingested
@@ -22,7 +20,7 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ---
 
-## Features
+## 🚀 Features
 
 - 📄 Load and parse PDF documents
 - ✂️ Intelligent text chunking
@@ -34,13 +32,11 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ---
 
-## System Workflow
-
-![System Workflow](assets/system_workflow.png)
+## 🛠️ System Workflow
 
 ---
 
-## How It Works
+## 🚀 How It Works
 
 1. **PDF Ingestion**  
    Extracts raw text from PDF files.
@@ -62,9 +58,9 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
-![Tech Stack](assets/tech_stack.png)
+
 
 - Python
 - PDF loaders (PyPDF / pdfplumber)
@@ -74,9 +70,7 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ---
 
-## Project Structure
-
-![Project Structure](assets/project_structure.png)
+## 📂 Project Structure
 
 .
 ├── data/  
