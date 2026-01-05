@@ -32,6 +32,7 @@ Vector store (FAISS / Chroma / equivalent)
 
 ### 📂 Project Structure
 
+
 ├── data/
 │   └── products.csv
 ├── src/
