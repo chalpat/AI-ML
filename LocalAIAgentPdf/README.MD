@@ -110,8 +110,6 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ## Usage
 
-![Usage Example](assets/usage_example.png)
-
 1. Place PDF files inside `data/input_pdfs/`
 2. Run the application:
 
@@ -130,8 +128,6 @@ When a user submits a query, the system retrieves **only the most relevant infor
 ---
 
 ## Use Cases
-
-![Use Cases](assets/use_cases.png)
 
 - PDF question answering
 - Research paper analysis
