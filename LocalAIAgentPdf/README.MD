@@ -4,44 +4,79 @@
 
 This project implements a **PDF-based Retrieval-Augmented Generation (RAG)** system.  
 It reads input PDF files, converts the content into chunks, generates embeddings, and stores them in a **vector database**.  
-When a user submits a query, the system retrieves **only the most relevant information from the loaded PDF(s)** and generates precise answers based strictly on that content.
+When a user submits a query, the system retrieves **only the most relevant information from the loaded PDF(s)** and generates accurate, context-specific answers.
+
+---
+
+## Architecture Diagram
+
+![RAG Architecture](assets/rag_architecture.png)
+
+**Flow Explanation:**
+1. PDF files are ingested
+2. Text is chunked into smaller segments
+3. Embeddings are generated for each chunk
+4. Vectors are stored in a vector database
+5. User queries retrieve relevant chunks
+6. LLM generates answers strictly from retrieved context
 
 ---
 
 ## Features
 
-- Load and process PDF documents
-- Split PDF text into optimized chunks
-- Generate embeddings for each chunk
-- Store embeddings in a vector database
-- Retrieve only relevant chunks for a query
-- Generate accurate, PDF-specific answers
-- Prevents hallucination by restricting responses to document context
+- 📄 Load and parse PDF documents
+- ✂️ Intelligent text chunking
+- 🧠 Embedding generation
+- 🗄️ Vector database storage
+- 🔍 Context-aware retrieval
+- 💬 Accurate PDF-only responses
+- 🚫 No hallucinations or external knowledge
+
+---
+
+## System Workflow
+
+![System Workflow](assets/system_workflow.png)
 
 ---
 
 ## How It Works
 
-1. PDF files are read and text is extracted
-2. Extracted text is split into smaller chunks
-3. Each chunk is converted into vector embeddings
-4. Embeddings are stored in a vector database
-5. User queries are embedded and matched against stored vectors
-6. Only the most relevant PDF content is used to generate the response
+1. **PDF Ingestion**  
+   Extracts raw text from PDF files.
+
+2. **Chunking**  
+   Breaks text into overlapping chunks for better semantic retrieval.
+
+3. **Embedding Generation**  
+   Converts chunks into dense vector representations.
+
+4. **Vector Storage**  
+   Stores embeddings in a vector database for fast similarity search.
+
+5. **Query Processing**  
+   User queries are embedded and matched against stored vectors.
+
+6. **Answer Generation**  
+   Responses are generated only from the retrieved PDF chunks.
 
 ---
 
 ## Technology Stack
 
+![Tech Stack](assets/tech_stack.png)
+
 - Python
-- PDF parsing library (PyPDF / pdfplumber / similar)
-- Embedding models (OpenAI, HuggingFace, or local models)
-- Vector database (FAISS, Chroma, Pinecone, etc.)
-- RAG framework (LangChain, LlamaIndex, or custom implementation)
+- PDF loaders (PyPDF / pdfplumber)
+- Embedding models (OpenAI / HuggingFace / local models)
+- Vector databases (FAISS / Chroma / Pinecone)
+- RAG frameworks (LangChain / LlamaIndex)
 
 ---
 
 ## Project Structure
+
+![Project Structure](assets/project_structure.png)
 
 .
 ├── data/  
@@ -81,60 +116,64 @@ When a user submits a query, the system retrieves **only the most relevant infor
 
 ## Usage
 
-1. Place your PDF files in the `data/input_pdfs/` directory
+![Usage Example](assets/usage_example.png)
+
+1. Place PDF files inside `data/input_pdfs/`
 2. Run the application:
 
    python app.py  
 
 3. Ask questions related to the PDF content
-4. The system responds using **only the loaded PDF data**
+4. Receive answers strictly derived from the loaded documents
 
 ---
 
 ## Important Note
 
-This RAG system **does not use external knowledge**.  
-All responses are generated **strictly from the content of the provided PDF files**, ensuring accuracy and reliability.
+> ⚠️ This RAG system **does not use external knowledge**.  
+> All responses are generated **only from the content of the provided PDF files**, ensuring reliability and correctness.
 
 ---
 
 ## Use Cases
 
-- PDF document question answering
+![Use Cases](assets/use_cases.png)
+
+- PDF question answering
 - Research paper analysis
-- Technical documentation assistants
-- Policy and compliance document search
-- Internal knowledge base systems
+- Technical manuals and guides
+- Policy and compliance documents
+- Internal enterprise knowledge bases
 
 ---
 
 ## Future Enhancements
 
-- Support for additional file formats (DOCX, TXT, HTML)
+- Support for DOCX, TXT, and HTML files
 - Metadata-based filtering
-- Web or UI interface (Streamlit / Gradio)
-- Multi-PDF comparison
-- Performance and caching improvements
+- UI integration (Streamlit / Gradio)
+- Multi-document comparison
+- Performance optimization and caching
 
 ---
 
 ## Contributing
 
 Contributions are welcome.  
-Fork the repository, create a new branch, and submit a pull request with your improvements.
+Fork the repository, create a feature branch, and submit a pull request.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
 ## Acknowledgements
 
-Inspired by modern Retrieval-Augmented Generation (RAG) architectures and advancements in vector search and LLM-based systems.
+Inspired by modern **Retrieval-Augmented Generation (RAG)** architectures and advancements in vector search and LLM-powered systems.
 
 ---
 
-⭐ If you find this project useful, consider starring the repository on GitHub!
+⭐ If you find this project useful, please consider starring the repository on GitHub!
