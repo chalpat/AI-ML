@@ -1,12 +1,12 @@
 ### Local RAG AI customized for reading a products csv and respond to specific queries related to price, etc.
 
-📌 Overview
+📌 #### Overview
 
 This project implements a Local Retrieval-Augmented Generation (RAG) AI system designed to read and understand a product dataset stored in a CSV file. It enables users to ask natural language questions and receive accurate, context-aware responses related to product details such as price, availability, category, and other attributes.
 
 The system runs locally, ensuring better data privacy, lower latency, and full control over the data and models used.
 
-🚀 Features
+🚀 #### Features
 
 📊 Reads and indexes product data from a CSV file
 
