@@ -31,6 +31,7 @@ Embedding model (HuggingFace / OpenAI / Local)
 Vector store (FAISS / Chroma / equivalent)
 
 ### 📂 Project Structure
+
 ├── data/
 │   └── products.csv
 ├── src/
@@ -41,6 +42,7 @@ Vector store (FAISS / Chroma / equivalent)
 └── README.md
 
 ### 📥 Installation
+
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 pip install -r requirements.txt
@@ -52,7 +54,6 @@ Place your product CSV file inside the data/ directory.
 Run the ingestion process to build the vector index:
 
 python src/ingest.py
-
 
 Start querying the system:
 
