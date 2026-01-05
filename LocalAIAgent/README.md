@@ -1,12 +1,12 @@
-### Local RAG AI customized for reading a products csv and respond to specific queries related to price, etc.
+## Local RAG AI customized for reading a products csv and respond to specific queries related to price, etc.
 
-#### 📌  Overview
+### 📌  Overview
 
 This project implements a Local Retrieval-Augmented Generation (RAG) AI system designed to read and understand a product dataset stored in a CSV file. It enables users to ask natural language questions and receive accurate, context-aware responses related to product details such as price, availability, category, and other attributes.
 
 The system runs locally, ensuring better data privacy, lower latency, and full control over the data and models used.
 
-#### 🚀 Features
+### 🚀 Features
 
 📊 Reads and indexes product data from a CSV file
 
@@ -20,7 +20,7 @@ The system runs locally, ensuring better data privacy, lower latency, and full c
 
 🔧 Easily customizable for different CSV schemas
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 Python
 
@@ -30,7 +30,7 @@ Embedding model (HuggingFace / OpenAI / Local)
 
 Vector store (FAISS / Chroma / equivalent)
 
-📂 Project Structure
+### 📂 Project Structure
 ├── data/
 │   └── products.csv
 ├── src/
@@ -40,15 +40,56 @@ Vector store (FAISS / Chroma / equivalent)
 ├── requirements.txt
 └── README.md
 
-📥 Installation
+### 📥 Installation
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 pip install -r requirements.txt
 
-▶️ Usage
+### ▶️ Usage
 
 Place your product CSV file inside the data/ directory.
 
 Run the ingestion process to build the vector index:
 
-CSV-based data ingestion
+python src/ingest.py
+
+
+Start querying the system:
+
+python src/query.py
+
+### 🧪 Example Queries
+
+“What is the price of Product A?”
+
+“List products under ₹10,000”
+
+“Which product has the highest rating?”
+
+“Show all electronics products in stock”
+
+### 🔧 Customization
+
+Modify CSV column mappings in the ingestion script
+
+Swap embedding or LLM models based on performance needs
+
+Extend response logic for analytics or summaries
+
+### 🔐 Data Privacy
+
+All data processing and inference can be performed locally, making this solution ideal for sensitive or proprietary product information.
+
+### 📌 Use Cases
+
+Product catalog search
+
+Internal pricing intelligence
+
+E-commerce analytics
+
+Inventory & sales support tools
+
+### 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
