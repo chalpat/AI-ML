@@ -30,8 +30,7 @@ Embedding model (HuggingFace / OpenAI / Local)
 
 Vector store (FAISS / Chroma / equivalent)
 
-### 📂 Project Structure
-
+📂 Project Structure
 
 ├── data/
 │   └── products.csv
