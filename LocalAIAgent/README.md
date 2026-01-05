@@ -32,14 +32,14 @@ Vector store (FAISS / Chroma / equivalent)
 
 # Local RAG AI – Product CSV Query Assistant
 
-## 📖 Description
+### 📖 Description
 This project is a **Local Retrieval-Augmented Generation (RAG) AI system** customized to read a **products CSV file** and respond intelligently to **specific user queries** such as product price, category, availability, and other related attributes.
 
 By combining semantic search with a Large Language Model (LLM), the system retrieves relevant product records from the CSV and generates accurate, context-aware answers — all while running **locally** for improved privacy and control.
 
 ---
 
-## ✨ Key Features
+### ✨ Key Features
 - 📊 Reads and processes product data from a CSV file  
 - 🔍 Semantic search using vector embeddings  
 - 🤖 Retrieval-Augmented Generation (RAG) based responses  
@@ -49,7 +49,7 @@ By combining semantic search with a Large Language Model (LLM), the system retri
 
 ---
 
-## 🧠 How It Works
+### 🧠 How It Works
 1. Product data is loaded from a CSV file  
 2. Each row is converted into embeddings and stored in a vector index  
 3. User queries are matched semantically against indexed data  
@@ -57,23 +57,11 @@ By combining semantic search with a Large Language Model (LLM), the system retri
 
 ---
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 - Python  
 - Local or API-based LLM (configurable)  
 - Embedding models (HuggingFace / OpenAI / Local)  
 - Vector database (FAISS / ChromaDB / similar)  
-
----
-
-## 📂 Project Structure
-├── data/
-│ └── products.csv
-├── src/
-│ ├── ingest.py # CSV ingestion and vector indexing
-│ ├── rag_engine.py # RAG pipeline implementation
-│ └── query.py # Query interface
-├── requirements.txt
-└── README.md
 
 ### 📥 Installation
 
