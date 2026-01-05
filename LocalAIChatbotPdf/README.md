@@ -1,1 +1,54 @@
-This is a Streamlit integration for dynamic input through UI for querying the loaded Pdf in the project LocalAIAgentPdf
+# 📄 LocalAIAgentPdf – Streamlit UI Integration
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)
+![RAG](https://img.shields.io/badge/RAG-PDF%20Querying-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+---
+
+## 🚀 Overview
+
+**LocalAIAgentPdf – Streamlit Integration** is a user-friendly web application built using **Streamlit** that enables **dynamic querying of PDF documents** loaded into the **LocalAIAgentPdf RAG system**.
+
+This project provides an intuitive UI layer on top of your existing **PDF-based Retrieval-Augmented Generation (RAG)** pipeline, allowing users to:
+- Upload PDFs
+- Ask natural language questions
+- Receive **context-aware, document-specific answers**
+
+---
+
+## 🖼️ Application Preview
+
+### 🔹 Home Screen
+![Home UI](images/home_ui.png)
+
+### 🔹 PDF Upload & Indexing
+![PDF Upload](images/pdf_upload.png)
+
+### 🔹 Querying the PDF
+![Query UI](images/query_ui.png)
+
+### 🔹 Answer with Source Context
+![Answer Output](images/answer_output.png)
+
+> 📌 **Note:** Place the images inside an `images/` folder in your repository.
+
+---
+
+## 🧠 Architecture
+
+```text
+PDF Document
+     ↓
+Text Chunking
+     ↓
+Embeddings Generation
+     ↓
+Vector Database
+     ↓
+Retriever
+     ↓
+LLM
+     ↓
+Streamlit UI Response
