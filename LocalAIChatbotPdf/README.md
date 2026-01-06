@@ -25,8 +25,6 @@ This project provides an intuitive UI layer on top of your existing **PDF-based 
 ### 🔹 Querying the PDF
 ### 🔹 Answer with Source Context
 
-> 📌 **Note:** Place the images inside an `images/` folder in your repository.
-
 ---
 
 ## 🧠 Architecture
@@ -45,4 +43,5 @@ Retriever
 LLM
      ↓
 Streamlit UI Response
+
 
