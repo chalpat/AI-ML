@@ -1,7 +1,5 @@
 # LangChain + OpenAI + LangSmith Integration 🚀
 
-![LangChain + LangSmith](https://raw.githubusercontent.com/langchain-ai/langchain/master/docs/static/img/langchain_stack.png)
-
 ## 📌 Project Overview
 
 This project demonstrates **LangChain integration with OpenAI models and LangSmith** for building, tracing, debugging, and monitoring LLM-powered applications.
@@ -17,8 +15,6 @@ The project serves as a **hands-on reference** for developers who want observabi
 ---
 
 ## 🧩 Architecture Overview
-
-![LangSmith Architecture](https://docs.smith.langchain.com/assets/images/overview-diagram-9f1f3b2a4c9e1b3f5d6d2a6a4e9c8b2f.png)
 
 **Flow:**
 1. User sends a query
@@ -46,3 +42,4 @@ The project serves as a **hands-on reference** for developers who want observabi
 ├── requirements.txt      # Project dependencies
 ├── .env                  # API keys and configuration
 ├── README.md             # Project documentation
+
