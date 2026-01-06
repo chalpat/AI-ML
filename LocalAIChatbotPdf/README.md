@@ -21,16 +21,9 @@ This project provides an intuitive UI layer on top of your existing **PDF-based 
 ## 🖼️ Application Preview
 
 ### 🔹 Home Screen
-![Home UI](images/home_ui.png)
-
 ### 🔹 PDF Upload & Indexing
-![PDF Upload](images/pdf_upload.png)
-
 ### 🔹 Querying the PDF
-![Query UI](images/query_ui.png)
-
 ### 🔹 Answer with Source Context
-![Answer Output](images/answer_output.png)
 
 > 📌 **Note:** Place the images inside an `images/` folder in your repository.
 
@@ -52,3 +45,4 @@ Retriever
 LLM
      ↓
 Streamlit UI Response
+
